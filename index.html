@@ -15,7 +15,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="jquery.bootstrap-growl.min.js"></script>
+        <script src="jquery.bootstrap-growl.min.js"></script>
+        <script src="functions.js"></script>
 </head>
 
 <body>
@@ -23,46 +24,11 @@
         <br>
         <h1>Example using Bootstrap Growl!</h1>
         <br>
-        <button class="success btn btn-success">Success</button>
-        <button class="error btn btn-danger">Error</button>
-        <button class="info btn btn-info">Info</button>
-        <button class="warning btn btn-warning">Warning</button>
+        <button onclick="Growling('Congratulations! ^_^', 'success')" class="btn btn-success">Success</button>
+        <button onclick="Growling('We have an error! :(', 'danger')"  class="btn btn-danger">Error</button>
+        <button onclick="Growling('we have information for you! :)', 'info')"  class="btn btn-info">Info</button>
+        <button onclick="Growling('Be carefull! :s', 'warning')"  class="btn btn-warning">Warning</button>
     </div>
-
-    <script type="text/javascript">
-
-        $(".success").click(function () {
-            $.bootstrapGrowl('We do have the Kapua suite available.', {
-                type: 'success',
-                delay: 2000,
-            });
-        });
-
-
-        $(".error").click(function () {
-            $.bootstrapGrowl('You got an Error!', {
-                type: 'danger',
-                delay: 2000,
-            });
-        });
-
-
-        $(".info").click(function () {
-            $.bootstrapGrowl('It is for your kind information.', {
-                type: 'info',
-                delay: 2000,
-            });
-        });
-
-
-        $(".warning").click(function () {
-            $.bootstrapGrowl('It is for your kind warning', {
-                type: 'warning',
-                delay: 2000,
-            });
-        });
-
-    </script>
 </body>
 
 </html>
